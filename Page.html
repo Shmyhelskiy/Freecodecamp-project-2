@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Task 2</title>
+</head>
+<body id="main">
+    <div class="head">
+        <h1 id="title"> freeCodeCamp Survey Form </h1>
+        <p id="description"> Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <div class="conteiner">
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input  id="name" type="text" name="Name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group"> 
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age(optional)</p>
+                <input id="number" type="number" name="Number" pattern="[0-9]{2}" placeholder="number" step="1" min="10" max="99" required>
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown">
+                    <option disabled selected>Select curent role</option>
+                    <option>Student</option>
+                    <option>Full time job</option>
+                    <option>Full time Learner</option>
+                    <option>Prefear not to say</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div>
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <input type="radio" name="radio" value="Definitely">Definitely <br>
+                <input type="radio" name="radio" value="Maybe">Maybe <br>
+                <input type="radio" name="radio" value="Not sure">Not sure
+            </div>
+            <div class="checkbox">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <input type="checkbox" value="checkbox"> Front-end Projects <br>
+                <input type="checkbox" value="checkbox"> Back-end Projects<br>
+                <input type="checkbox" value="checkbox"> Data Visualization<br>
+                <input type="checkbox" value="checkbox"> Challenges<br>
+                <input type="checkbox" value="checkbox"> Open Source Community<br>
+                <input type="checkbox" value="checkbox"> Gitter help rooms<br>
+                <input type="checkbox" value="checkbox"> Videos<br>
+                <input type="checkbox" value="checkbox"> City Meetups<br>
+                <input type="checkbox" value="checkbox"> Wiki<br>
+                <input type="checkbox" value="checkbox"> Forum<br>
+                <input type="checkbox" value="checkbox"> Additional Courses<br>
+            </div>
+            <div id="textarea">
+                <p>Any comments or suggestions?</p>
+                <textarea name="Textarea" placeholder="Enter your comment here...">
+
+                </textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit" name="Submit" id="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
